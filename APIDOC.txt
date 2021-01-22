@@ -1,0 +1,6 @@
+----------
+NAME: Lottry Lobby Application
+
+ENDPOINTS:
+Room: http://domain/api/room/{add,delete,post,update} // ALLOW ANY USER
+Member: http://domain/api/room/{add,delete,post,update} // ALLOW ANY USER
