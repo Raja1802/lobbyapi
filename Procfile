@@ -1,0 +1,1 @@
+web: gunicorn lobbie.wsgi --log-file -

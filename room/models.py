@@ -12,6 +12,7 @@ class Room(models.Model):
     entry_fee = models.IntegerField(default=0)
     total_fee = models.BigIntegerField(default=0)
     winner = models.IntegerField(default=0)
+    total_people = models.IntegerField(default=0)
     date_created = models.DateTimeField(
         auto_now_add=True, null=True, blank=True)
 

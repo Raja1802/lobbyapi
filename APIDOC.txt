@@ -4,3 +4,5 @@ NAME: Lottry Lobby Application
 ENDPOINTS:
 Room: http://domain/api/room/{add,delete,post,update} // ALLOW ANY USER
 Member: http://domain/api/room/{add,delete,post,update} // ALLOW ANY USER
+Random: http://localhost:8000/admin/room/room/add/ //ALLOW ANY USER
+Winner: http://localhost:8000/api/winner/?room=1 //ALLOW ANY USER
