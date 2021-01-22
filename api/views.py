@@ -53,3 +53,23 @@ class Startapp(generics.ListAPIView):
         serializer = self.serializer_class(winner)
         winner = serializer.data
         return Response({"winner": winner, "gift": winner_gift})
+
+class MemberViewsetApi(generics.ListAPIView):
+    @classmethod
+    def get_extra_actions(cls):
+        return []
+    serializer_class = MemberSerializer
+    permission_classes = [permissions.AllowAny]
+
+    
+
+    def get_queryset(self):
+        room = self.request.GET.get("room")
+        qs = imember.objects.filter(room=room)
+        return qs
+
+    def list(self, request):
+        queryset = self.get_queryset()
+        serializer = self.serializer_class(queryset, many=True)
+        member = serializer.data
+        return Response(member)
