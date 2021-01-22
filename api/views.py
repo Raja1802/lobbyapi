@@ -72,4 +72,4 @@ class MemberViewsetApi(generics.ListAPIView):
         queryset = self.get_queryset()
         serializer = self.serializer_class(queryset, many=True)
         member = serializer.data
-        return Response(member)
+        return Response({"members":member})
