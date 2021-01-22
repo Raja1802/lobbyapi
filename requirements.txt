@@ -15,3 +15,4 @@ django-heroku==0.3.1
 psycopg2==2.8.6
 Unipath==1.0
 python-decouple==3
+django-utils-six==2.0
