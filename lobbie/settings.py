@@ -26,7 +26,7 @@ SECRET_KEY = 'y2=uo3agmfd^!iw=pfnh01=sx+ox_a$tdb_i9*-4)f#k*lce83'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["herokuapp.com", "*"]
 CORS_ORIGIN_ALLOW_ALL = True
 
 
